@@ -7,4 +7,5 @@
 Observações: Não esquecer que precisamos identificar todas as funções assíncronas com um "async" e lógicamente devemos esperar as respostas com um "await"
 
 -----------------------------------------------------------------------------
-Nosso projeto vai ser implementado de forma colaborativa e pode ser clonado em 
+Nosso projeto vai ser implementado de forma colaborativa e pode ser clonado em https://github.com/pedroharagao/Aop2_backend.git
+Para clonar o repositório, o colaborador deve ter o GIT instalado na máquina e usar o comando "git clone https://github.com/pedroharagao/Aop2_backend.git" na pasta onde deseja salvar os arquivos.
