@@ -1,0 +1,10 @@
+ Para conseguirmos obter e enviar dados para a APIRest, temos que primeiro analisar os recursos que utilizaremos. E para isso, como base, usaremos o XMLHttpRequest que é uma API muito usada em linguagens de scripts e que faz essa correspondencia de maneira bastante eficaz. Os valores usados aqui serão apenas de base aos quais de acordo com o necessário na nossa aplicação irão se acomodar da melhor maneira. 
+ Iniciando o servidor, é interessante "salvar" a URL da API em uma variavel, vamos chama-lá de API_URL. Após isso, instânciamos um objeto do tipo "XMLHttpRequest" e dentro do método "onreadystatechange" incluímos uma função que vai aplicar tudo o que desejamos cada vez que a requisição acontecer. É interessante fazer uma validação com um IF que compara se o readyState foi completo (compara com um inteiro "4") e qual foi o status do objeto sob o método http (geralmente compara-se o status com o valor inteiro "200").
+ Depois disso iniciamos um método no nosso objeto XMLHttpRequest chamado "open" onde passamos como parâmetros um método http ("GET", por exemplo), depois passamos uma string com o caminho para a API(a variável API_URL citada acima, por exemplo) e, por último, um valor boleano True indicando que a requisição é assíncrona). Depois disso, usamos o método "send" para que a requisição aconteça.
+ Para ver se tudo está funcionando, podemos através do DOM, manipular uma div para que ela mostre o conteúdo obtido na requisição. Para isso, basta incluir dentro do IF uma variavel que recebe o objeto HTML, e depois mudá-lo com o innerHTML refenciando o método "responseText" do objeto XMLHttpRequest.
+
+
+Observações: Não esquecer que precisamos identificar todas as funções assíncronas com um "async" e lógicamente devemos esperar as respostas com um "await"
+
+-----------------------------------------------------------------------------
+Nosso projeto vai ser implementado de forma colaborativa e pode ser clonado em 
